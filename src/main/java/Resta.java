@@ -1,6 +1,13 @@
 public class Resta {
+    //variable para valor acumulado y la iniciamos en 0
+    private double valorAcumulado;
+    public Resta() {
+        this.valorAcumulado = 0.0;
+    }
+
     public static void main(String[] args) {
-       Resta calc = new Resta();
+
+        Resta calc = new Resta();
        //probamos resta de dos dobles
         System.out.println("8.5 - 1.4: " + calc.restar(8.5, 1.4));
         //probamos a restar dos enteros
@@ -18,10 +25,16 @@ public class Resta {
     public int restar(int num1, int num2){
         return num1 - num2;
     }
-    //restar tres números double
+        //restar tres números double
     public double restar(double num1, double num2, double num3){
         return num1 - num2 - num3;
+              }
+    //restar valor acumulado
+    public void restarAcumulado(double num) {
+        this.valorAcumulado -= num;
     }
+
+
 
 
 }
