@@ -1,4 +1,4 @@
-public class product {
+public class Product {
 
     public static int productInt(int numA, int numB) {
         return numA * numB;
